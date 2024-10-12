@@ -1,0 +1,194 @@
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
+  font: 1.2rem "Fira Sans", sans-serif;
+  color: #1d3c34;
+}
+ul,
+ul li {
+  list-style: none;
+  padding: 0;
+}
+ul {
+  display: flex;
+  align-items: center;
+}
+button {
+  display: inline-block;
+  box-shadow: none;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.header {
+  padding: 10px;
+  background-color: #1d3c34;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  box-shadow: 0 0 20px rgba(50, 58, 50, 0.7);
+  position: sticky;
+  top: 0px;
+}
+.header_menu-link {
+  margin-left: 40px;
+  cursor: pointer;
+}
+.header_menu-link:hover {
+  text-decoration: underline;
+}
+.header_language-btn {
+  background-color: white;
+  color: #1d3c34;
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.header_language-btn:hover {
+  background-color: #1d3c34;
+  color: white;
+}
+.header_language {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.about-me {
+  padding: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hardskills_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.education {
+  background-color: #dadada;
+  padding: 50px;
+}
+.education_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.projects {
+  padding: 50px;
+}
+.projects_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.projects_card {
+  background-color: #dadada;
+  margin: 20px;
+}
+.contacts {
+  background-color: #1d3c34;
+  color: White;
+  padding: 50px;
+}
+.contacts_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  align-items: start;
+}
+.contacts_link {
+  color: white;
+  text-decoration: none;
+}
+.resume {
+  background-color: #1d3c34;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 0 20px rgba(50, 58, 50, 0.7);
+  cursor: pointer;
+}
+.resume:hover {
+  background-color: white;
+  color: #1d3c34;
+}
+.certificate {
+  z-index: 2;
+  max-width: 500px;
+  height: 500px;
+  position: sticky;
+  top: -200px;
+}
+.btn {
+  background-color: #1d3c34;
+  color: white;
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: white;
+  color: #1d3c34;
+}
+.projects_btn {
+  margin: 10px;
+}
+@media screen and (max-width:1040px) {
+  .header_language {
+    margin: 10px;
+  }
+}
+@media screen and (max-width:700px) {
+  .header {
+    align-items: center;
+    flex-direction: column;
+  }
+  .education_list {
+    display: inline;
+  }
+  .education_item {
+    margin-bottom: 70px;
+  }
+  .projects_cards {
+    display: inline;
+  }
+  .contacts_list {
+    display: inline;
+  }
+  .projects_card {
+    padding: 20px;
+  }
+  .header_language {
+    width: 100px;
+  }
+  .header_language-btn {
+    width: 50px;
+  }
+  .header_menu-link {
+    margin: 10px;
+  }
+}
+@media screen and (max-width:600px) {
+  .about-me {
+    display: inline;
+    padding: 0px;
+  }
+  .header {
+    position: static;
+  }
+}
+@media screen and (max-width:420px) {
+  .contacts_list {
+    font-size: 15px;
+    padding: 0px;
+  }
+  .header_menu {
+    display: none;
+  }
+}

@@ -1,0 +1,39 @@
+{
+    "header-title":"Anna Zhukova",
+    "header-description": "BEGINNER FRONTEND DEVELOPER",
+    "close": "Close",
+    "header_menu-link":{
+        "about-me": "About me",
+        "education": "Education",
+        "projects": "My projects",
+        "contacts": "Contacts"
+    },
+    "about-me":{
+        "title": "About Me",
+        "hardskills_title": "Hard Skills"
+    },
+    "resume": "MY RESUME",
+    "education": {
+        "title": "Education",
+        "bsuir": "Belarusian State University of Informatics and Radioelectronics",
+        "certificate": "Certificate"
+    },
+    "projects": {
+        "title": "My Projects",
+        "project": "PROJECT",
+        "details": "MORE DETAILS"
+    },
+    "projectsCard1":{
+        "title": "Todo",
+        "description": "An application that is designed to manage and track tasks that need to be completed. It provides the user with the ability to create, view, edit and delete tasks, as well as mark them as completed. The application executed with authorization."
+    },
+    "projectsCard2":{
+        "title": "Todo with Redux",
+        "description": "An application that is designed to manage and track tasks that need to be completed. It provides the user with the ability to create, view, edit and delete tasks, as well as mark them as completed."
+    },
+    "contacts": {
+        "title": "Contacts",
+        "phone": "Phone",
+        "email": "E-mail"
+    }
+}
