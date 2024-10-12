@@ -143,6 +143,20 @@ a {
   .header_language {
     margin: 10px;
   }
+  .resume_modal-img {
+    width: 700px;
+  }
+  .academy_modal-img {
+    width: 700px;
+  }
+}
+@media screen and (max-width:800px) {
+  .resume_modal-img {
+    width: 500px;
+  }
+  .academy_modal-img {
+    width: 500px;
+  }
 }
 @media screen and (max-width:700px) {
   .header {
@@ -174,6 +188,14 @@ a {
     margin: 10px;
   }
 }
+@media screen and (max-width:620px) {
+  .resume_modal-img {
+    width: 400px;
+  }
+  .academy_modal-img {
+    width: 400px;
+  }
+}
 @media screen and (max-width:600px) {
   .about-me {
     display: inline;
@@ -183,6 +205,14 @@ a {
     position: static;
   }
 }
+@media screen and (max-width:520px) {
+  .resume_modal-img {
+    width: 300px;
+  }
+  .academy_modal-img {
+    width: 300px;
+  }
+}
 @media screen and (max-width:420px) {
   .contacts_list {
     font-size: 15px;
@@ -190,5 +220,11 @@ a {
   }
   .header_menu {
     display: none;
+  }
+  .resume_modal-img {
+    width: 200px;
+  }
+  .academy_modal-img {
+    width: 200px;
   }
 }

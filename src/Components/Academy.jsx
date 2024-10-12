@@ -20,7 +20,7 @@ const Academy = () => {
       <div>
         <button class='education_item-btn btn' onClick={openModal}>{t('education.certificate')}</button>
         <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
-          {<img src={certificate} alt='QAacademy' width={1000}></img>}
+          {<img class='academy_modal-img' src={certificate} alt='QAacademy' width={1000}></img>}
           <button class='education_item-btn btn' onClick={closeModal}>{t('close')}</button>
         </Modal>
       </div>

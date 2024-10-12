@@ -18,7 +18,7 @@ const Resume = () => {
         <h3>{t('resume')}</h3>
       </div>
       <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
-        {<img src={resume} alt='resume'></img>}
+        {<img class='resume_modal-img' src={resume} alt='resume'></img>}
         <button class='resume_close-btn btn' onClick={closeModal}>{t('close')}</button>
       </Modal>
     </div>

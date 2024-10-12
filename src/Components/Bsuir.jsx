@@ -1,5 +1,5 @@
 import React from 'react';
-import bsuir from '../img/bsuir.png';
+import bsuir from '../img/bsuir.jpg';
 import { useTranslation } from 'react-i18next';
 
 const Bsuir = () => {
