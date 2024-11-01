@@ -6,7 +6,7 @@ const AboutMe = () => {
 
   return (
     <div class='about-me' id='about-me'>
-      <img class='about-me_avatar' src={avatar} alt='avatar'></img>
+      <img class='about-me_avatar' src={avatar} alt='avatar'  width={500} height={400}></img>
       <Description />
     </div>
   )

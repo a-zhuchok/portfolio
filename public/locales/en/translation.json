@@ -1,6 +1,6 @@
 {
     "header-title":"Anna Zhukova",
-    "header-description": "BEGINNER FRONTEND DEVELOPER",
+    "header-description": "FRONTEND DEVELOPER",
     "close": "Close",
     "header_menu-link":{
         "about-me": "About me",
@@ -25,11 +25,15 @@
     },
     "projectsCard1":{
         "title": "Todo",
-        "description": "An application that is designed to manage and track tasks that need to be completed. It provides the user with the ability to create, view, edit and delete tasks, as well as mark them as completed. The application executed with authorization."
+        "description": "An application that is designed to manage and track tasks that need to be completed. It provides the user with the ability to create, view, edit and delete tasks, as well as mark them as completed. The application has the ability to authorize users."
     },
     "projectsCard2":{
         "title": "Todo with Redux",
-        "description": "An application that is designed to manage and track tasks that need to be completed. It provides the user with the ability to create, view, edit and delete tasks, as well as mark them as completed."
+        "description": "An application that is designed to manage and track tasks that need to be completed. It provides the user with the ability to create, view, edit and delete tasks, as well as mark them as completed. The application has the ability to authorize users."
+    },
+    "projectsCard3":{
+        "title": "Change Theme",
+        "description": "Button app to change global theme."
     },
     "contacts": {
         "title": "Contacts",

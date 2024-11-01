@@ -20,6 +20,10 @@ button {
   box-shadow: none;
   cursor: pointer;
 }
+h3 {
+  z-index: 2;
+  position: relative;
+}
 a {
   text-decoration: none;
   color: white;
@@ -34,6 +38,7 @@ a {
   box-shadow: 0 0 20px rgba(50, 58, 50, 0.7);
   position: sticky;
   top: 0px;
+  z-index: 5;
 }
 .header_menu-link {
   margin-left: 40px;
@@ -53,6 +58,10 @@ a {
   background-color: #1d3c34;
   color: white;
 }
+.header_language-btn:active {
+  background: red;
+ 
+}
 .header_language {
   background-color: white;
   border: 2px solid white;
@@ -71,7 +80,6 @@ a {
   grid-gap: 10px;
 }
 .education {
-  background-color: #dadada;
   padding: 50px;
 }
 .education_list {
@@ -79,6 +87,16 @@ a {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
 }
+.education_item {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+.education_item:hover {
+  transform: scale(1.2); 
+ }
 .projects {
   padding: 50px;
 }
@@ -88,36 +106,75 @@ a {
   grid-gap: 10px;
 }
 .projects_card {
-  background-color: #dadada;
   margin: 20px;
+  background: #dadada;
+  transition: 0.7s;
+  border-radius: 10px;
+  position: relative;
 }
+.projects_btns {
+ position: absolute;
+ top:50%;
+ left:50%;
+ transform:translate(-50%, -50%);
+  opacity: 0;
+}
+.projects_card:hover .projects_img {
+  opacity: 0;
+}.projects_card:hover .projects_btns {
+  opacity: 1;
+}
+.projects_card:hover {
+  transform: scale(1.2); 
+ }
 .contacts {
   background-color: #1d3c34;
   color: White;
   padding: 50px;
 }
 .contacts_list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  align-items: start;
+ display: flex;
+ flex-direction: column;
 }
 .contacts_link {
   color: white;
   text-decoration: none;
 }
-.resume {
-  background-color: #1d3c34;
+
+.resume{
+  display: block;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
   color: white;
+  box-shadow: 0 0 20px rgba(50, 58, 50, 0.7);
   padding-top: 10px;
   padding-bottom: 10px;
-  box-shadow: 0 0 20px rgba(50, 58, 50, 0.7);
-  cursor: pointer;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  background-color: #1d3c34;
 }
-.resume:hover {
-  background-color: white;
+.resume:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #dadada;
+  transition: all .35s;
+}
+.resume:hover{
   color: #1d3c34;
 }
+
+.resume:hover:after{
+  width: 100%;
+}
+
 .certificate {
   z-index: 2;
   max-width: 500px;
@@ -135,6 +192,7 @@ a {
 .btn:hover {
   background-color: white;
   color: #1d3c34;
+  border: 1px solid #1d3c34;
 }
 .projects_btn {
   margin: 10px;
@@ -162,6 +220,7 @@ a {
   .header {
     align-items: center;
     flex-direction: column;
+    position: static;
   }
   .education_list {
     display: inline;
@@ -200,9 +259,6 @@ a {
   .about-me {
     display: inline;
     padding: 0px;
-  }
-  .header {
-    position: static;
   }
 }
 @media screen and (max-width:520px) {

@@ -1,6 +1,7 @@
 import React from 'react';
 import CardTodo from './CardTodo';
 import CardTodoRedux from './CardTodoRedux';
+import CardTheme from './CardTheme';
 import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
@@ -11,6 +12,7 @@ const Projects = () => {
       <div class='projects_cards'>
         <CardTodo/>
         <CardTodoRedux/>
+        <CardTheme/>
       </div>
     </div>
   )
