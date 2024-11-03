@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from '../Components/Title';
 import Menu from '../Components/Menu';
-import ToggleLanguage from '../Components/ToggleLanguage';
+import SwitchLanguage from './SwitchLanguage';
 
 const Header = () => {
 
@@ -9,7 +9,7 @@ const Header = () => {
     <div class='header'>
       <Title />
       <Menu />
-      <ToggleLanguage />
+      <SwitchLanguage />
     </div>
   )
 }

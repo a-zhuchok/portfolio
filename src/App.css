@@ -20,10 +20,6 @@ button {
   box-shadow: none;
   cursor: pointer;
 }
-h3 {
-  z-index: 2;
-  position: relative;
-}
 a {
   text-decoration: none;
   color: white;
@@ -38,7 +34,7 @@ a {
   box-shadow: 0 0 20px rgba(50, 58, 50, 0.7);
   position: sticky;
   top: 0px;
-  z-index: 5;
+  z-index: 1;
 }
 .header_menu-link {
   margin-left: 40px;
@@ -58,17 +54,13 @@ a {
   background-color: #1d3c34;
   color: white;
 }
-.header_language-btn:active {
-  background: red;
- 
-}
 .header_language {
   background-color: white;
   border: 2px solid white;
   border-radius: 5px;
 }
 .about-me {
-  padding: 50px;
+  padding: 60px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -80,7 +72,7 @@ a {
   grid-gap: 10px;
 }
 .education {
-  padding: 50px;
+  padding: 60px;
 }
 .education_list {
   display: grid;
@@ -95,10 +87,10 @@ a {
   transition: 0.7s;
 }
 .education_item:hover {
-  transform: scale(1.2); 
- }
+  transform: scale(1.2);
+}
 .projects {
-  padding: 50px;
+  padding-top: 60px;
 }
 .projects_cards {
   display: grid;
@@ -110,77 +102,60 @@ a {
   background: #dadada;
   transition: 0.7s;
   border-radius: 10px;
-  position: relative;
 }
 .projects_btns {
- position: absolute;
- top:50%;
- left:50%;
- transform:translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
 }
 .projects_card:hover .projects_img {
   opacity: 0;
-}.projects_card:hover .projects_btns {
+}
+.projects_card:hover .projects_btns {
   opacity: 1;
 }
 .projects_card:hover {
-  transform: scale(1.2); 
- }
+  transform: scale(1.2);
+}
 .contacts {
   background-color: #1d3c34;
   color: White;
   padding: 50px;
 }
 .contacts_list {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .contacts_link {
   color: white;
   text-decoration: none;
 }
-
-.resume{
+.resume_btn {
   display: block;
-  line-height: 40px;
-  font-size: 18px;
-  font-family: sans-serif;
-  text-decoration: none;
   color: white;
   box-shadow: 0 0 20px rgba(50, 58, 50, 0.7);
   padding-top: 10px;
   padding-bottom: 10px;
   letter-spacing: 2px;
-  text-align: center;
-  position: relative;
   transition: all .35s;
   background-color: #1d3c34;
 }
-.resume:after{
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #dadada;
-  transition: all .35s;
-}
-.resume:hover{
+.resume_btn:hover {
   color: #1d3c34;
+  background-color: white;
 }
-
-.resume:hover:after{
-  width: 100%;
-}
-
 .certificate {
   z-index: 2;
   max-width: 500px;
   height: 500px;
   position: sticky;
   top: -200px;
+}
+.modal_link {
+  color: #1d3c34;
+  text-decoration: underline;
 }
 .btn {
   background-color: #1d3c34;
@@ -283,4 +258,53 @@ a {
   .academy_modal-img {
     width: 200px;
   }
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  color: #1d3c34;
+  font-size: 18px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  border-radius: 30px;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  top: 4px;
+  left: 4px;
+  background-color: #1d3c34;
+  transition: 0.4s;
+  border-radius: 90px;
+}
+input:checked+.slider::before {
+  transform: translateX(26px);
+}
+.slider_russian {
+  position: absolute;
+  align-items: center;
+  margin-top: 6px;
+  margin-left: 5px;
+}
+.slider_english {
+  position: absolute;
+  align-items: center;
+  margin-top: 6px;
+  margin-left: 34px;
 }

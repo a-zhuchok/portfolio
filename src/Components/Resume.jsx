@@ -12,10 +12,11 @@ const Resume = () => {
   const closeModal = () => {
     setModalIsOpen(false)
   };
+ 
   return (
-    <div class='resume' id='resume'>
-      <div class='resume_btn' onClick={openModal}>
-        <h3>{t('resume')}</h3>
+    <div class='resume' id='resume' >
+      <div class='resume_btn' onClick={openModal} >
+        <h3 class='resume_title'>{t('resume')}</h3>
       </div>
       <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
         {<img class='resume_modal-img' src={resume} alt='resume'></img>}

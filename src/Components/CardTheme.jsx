@@ -17,13 +17,14 @@ const CardTheme = () => {
             <h5>{t('projectsCard3.title')}</h5>
             <img class='projects_img' src={theme} alt='theme'/>
             <div class='projects_btns'>
-                <a href='https://github.com/a-zhuchok/todo-app/tree/requests'><button class='projects_btn btn' >{t('projects.project')}</button></a>
+                <a href='https://petprojecttheme.netlify.app/'><button class='projects_btn btn' >{t('projects.project')}</button></a>
                 <button class='projects_btn btn' onClick={openModal}>{t('projects.details')}</button>
                 <Modal class='modal' isOpen={modalIsOpen} onRequestClose={closeModal}>
                     {<div >
                         <h2>{t('projectsCard3.title')}</h2>
                         <p>{t('projectsCard3.description')}</p>
                         <p>HTML/CSS, JavaScript, React, Context, Styled Components</p>
+                        <p>CitHub: <a class='modal_link' href="https://github.com/a-zhuchok/theme">https://github.com/a-zhuchok/theme</a></p>
                     </div>}
                     <button class='projects_btn btn' onClick={closeModal}>{t('close')}</button>
                 </Modal>

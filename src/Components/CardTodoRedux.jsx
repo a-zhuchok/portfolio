@@ -17,13 +17,14 @@ const CardTodoRedux = () => {
             <h5>{t('projectsCard2.title')}</h5>
             <img class='projects_img' src={todolist} alt='todo-list'/>
             <div class='projects_btns'>
-                <a href='https://github.com/a-zhuchok/todo-app/tree/redux'><button class='projects_btn btn'>{t('projects.project')}</button></a>
+                <a href='https://a-zhuchok.github.io/todo-app/'><button class='projects_btn btn'>{t('projects.project')}</button></a>
                 <button class='projects_btn btn' onClick={openModal}>{t('projects.details')}</button>
                 <Modal class='modal' isOpen={modalIsOpen} onRequestClose={closeModal}>
                     {<div >
                         <h2>{t('projectsCard2.title')}</h2>
                         <p>{t('projectsCard2.description')}</p>
                         <p>HTML/CSS, JavaScript, React, Redux Toolkit, Swagger, Ant Design, React Router DOM, axios</p>
+                        <p>CitHub: <a class='modal_link' href="https://github.com/a-zhuchok/todo-app/tree/redux-requests">https://github.com/a-zhuchok/todo-app/tree/redux-requests</a></p>
                     </div>}
                     <button class='projects_btn btn' onClick={closeModal}>{t('close')}</button>
                 </Modal>
