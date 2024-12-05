@@ -29,6 +29,7 @@ const Description = () => {
           <ul class='hardskills_list'>
             <motion.li custom={1} variants={textAnimation} class='hardskills_list-item'>HTML/CSS</motion.li>
             <motion.li custom={2} variants={textAnimation} class='hardskills_list-item'>JavaScript</motion.li>
+            <motion.li custom={2} variants={textAnimation} class='hardskills_list-item'>TypeScript</motion.li>
             <motion.li custom={3} variants={textAnimation} class='hardskills_list-item'>React</motion.li>
             <motion.li custom={4} variants={textAnimation} class='hardskills_list-item'>Redux</motion.li>
             <motion.li custom={5} variants={textAnimation} class='hardskills_list-item'>Git</motion.li>
