@@ -3,6 +3,7 @@ import CardTodo from './CardTodo';
 import CardTodoRedux from './CardTodoRedux';
 import CardTheme from './CardTheme';
 import { useTranslation } from 'react-i18next';
+import CardYoutubeSPA from './CardYoutubeSPA';
 
 const Projects = () => {
   const { t } = useTranslation();
@@ -15,6 +16,7 @@ const Projects = () => {
         <CardTodo/>
         <CardTodoRedux/>
         <CardTheme/>
+        <CardYoutubeSPA/>
       </div>
     </div>
   )

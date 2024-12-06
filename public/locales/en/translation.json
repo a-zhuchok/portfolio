@@ -35,6 +35,10 @@
         "title": "Change Theme",
         "description": "Button app to change global theme."
     },
+    "projectsCard4":{
+        "title": "YouTube SPA",
+        "description": "Application for searching YouTube videos."
+    },
     "contacts": {
         "title": "Contacts",
         "phone": "Phone",

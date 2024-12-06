@@ -35,6 +35,10 @@
         "title": "Изменение темы",
         "description": "Приложение-кнопка для изменения глобальной темы."
     },
+    "projectsCard4":{
+        "title": "YouTube SPA",
+        "description": "Приложение для поиска youtube-видео."
+    },
     "contacts": {
         "title": "Контакты",
         "phone": "Телефон",
