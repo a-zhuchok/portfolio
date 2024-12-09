@@ -24,7 +24,7 @@ const CardYoutubeSPA = () => {
                         <h2>{t('projectsCard4.title')}</h2>
                         <p>{t('projectsCard4.description')}</p>
                         <p>HTML/CSS, JavaScript, React, Redux Toolkit, YouTube API, Swagger, Ant Design, React Router DOM, axios</p>
-                        <p>CitHub: <a class='modal_link' href="https://github.com/a-zhuchok/YouTubeSPA">https://github.com/a-zhuchok/todo-app/tree/redux-requests</a></p>
+                        <p>CitHub: <a class='modal_link' href="https://github.com/a-zhuchok/YouTubeSPA">https://github.com/a-zhuchok/YouTubeSPA</a></p>
                     </div>}
                     <button class='projects_btn btn' onClick={closeModal}>{t('close')}</button>
                 </Modal>
