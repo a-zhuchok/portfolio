@@ -9,4 +9,4 @@ I add my pet projects to this application.
 - i18next;
 - React-modal;
 
-Deploy: 
+Deploy: https://rainbow-rabanadas-d689e0.netlify.app/ 
