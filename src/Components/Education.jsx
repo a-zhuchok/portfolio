@@ -9,7 +9,7 @@ const Education = () => {
  
   return (
     <div class='education' id='education'>
-      <h2 class='education_title'>{t('education.title')}</h2>
+      <h2 class='education_title title'>{t('education.title')}</h2>
       <div  class='education_list'>
         <Bsuir />
         <Academy />

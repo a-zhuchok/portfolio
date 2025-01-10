@@ -39,6 +39,10 @@
         "title": "YouTube SPA",
         "description": "Приложение для поиска youtube-видео."
     },
+    "projectsCard5":{
+        "title": "Hacker News",
+        "description": "Приложение для чтения новостей и комментариев к ним."
+    },
     "contacts": {
         "title": "Контакты",
         "phone": "Телефон",

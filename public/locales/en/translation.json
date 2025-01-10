@@ -39,6 +39,10 @@
         "title": "YouTube SPA",
         "description": "Application for searching YouTube videos."
     },
+    "projectsCard5":{
+        "title": "Hacker News",
+        "description": "Application for reading news and comments on them."
+    },
     "contacts": {
         "title": "Contacts",
         "phone": "Phone",

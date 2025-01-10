@@ -1,10 +1,10 @@
 body {
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0px;
   text-align: center;
-  font: 1.2rem "Fira Sans", sans-serif;
-  color: #1d3c34;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #0a0a0a;
 }
 ul,
 ul li {
@@ -22,19 +22,19 @@ button {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: #0a0a0a;
 }
 .header {
   padding: 10px;
-  background-color: #1d3c34;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: white;
-  box-shadow: 0 0 20px rgba(50, 58, 50, 0.7);
+  color: #0a0a0a;
   position: sticky;
-  top: 0px;
+  top: 10px;
   z-index: 1;
+  border-radius: 10px;
 }
 .header_menu-link {
   margin-left: 40px;
@@ -42,22 +42,6 @@ a {
 }
 .header_menu-link:hover {
   text-decoration: underline;
-}
-.header_language-btn {
-  background-color: white;
-  color: #1d3c34;
-  border: 0;
-  padding: 10px;
-  border-radius: 5px;
-}
-.header_language-btn:hover {
-  background-color: #1d3c34;
-  color: white;
-}
-.header_language {
-  background-color: white;
-  border: 2px solid white;
-  border-radius: 5px;
 }
 .about-me {
   padding: 60px;
@@ -71,6 +55,10 @@ a {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
 }
+.title {
+  font-size: 25px;
+  font-weight: 300;
+}
 .education {
   padding: 60px;
 }
@@ -80,8 +68,10 @@ a {
   grid-gap: 10px;
 }
 .education_item {
+  margin-top: 30px;
   padding: 20px;
-  margin: 20px;
+  margin-left: 59px;
+  margin-right: 59px;
   border: 1px solid;
   border-radius: 10px;
   transition: 0.7s;
@@ -91,6 +81,8 @@ a {
 }
 .projects {
   padding-top: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .projects_cards {
   display: grid;
@@ -99,9 +91,28 @@ a {
 }
 .projects_card {
   margin: 20px;
-  background: #dadada;
   transition: 0.7s;
+  border: 1px solid #0a0a0a;
   border-radius: 10px;
+}
+.modal {
+  z-index: 1000; 
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px; 
+  border-radius: 8px; 
+}
+.modal__overlay {
+  z-index: 999; 
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75); 
 }
 .projects_btns {
   position: absolute;
@@ -120,7 +131,7 @@ a {
   transform: scale(1.2);
 }
 .contacts {
-  background-color: #1d3c34;
+  background-color: #0a0a0a;
   color: White;
   padding: 50px;
 }
@@ -132,19 +143,8 @@ a {
   color: white;
   text-decoration: none;
 }
-.resume_btn {
-  display: block;
-  color: white;
-  box-shadow: 0 0 20px rgba(50, 58, 50, 0.7);
-  padding-top: 10px;
+.contacts_item {
   padding-bottom: 10px;
-  letter-spacing: 2px;
-  transition: all .35s;
-  background-color: #1d3c34;
-}
-.resume_btn:hover {
-  color: #1d3c34;
-  background-color: white;
 }
 .certificate {
   z-index: 2;
@@ -154,11 +154,11 @@ a {
   top: -200px;
 }
 .modal_link {
-  color: #1d3c34;
+  color: #0a0a0a;
   text-decoration: underline;
 }
 .btn {
-  background-color: #1d3c34;
+  background-color: #0a0a0a;
   color: white;
   border: 0;
   padding: 10px;
@@ -166,8 +166,8 @@ a {
 }
 .btn:hover {
   background-color: white;
-  color: #1d3c34;
-  border: 1px solid #1d3c34;
+  color: #0a0a0a;;
+  border: 1px solid #0a0a0a;;
 }
 .projects_btn {
   margin: 10px;
@@ -176,17 +176,11 @@ a {
   .header_language {
     margin: 10px;
   }
-  .resume_modal-img {
-    width: 700px;
-  }
   .academy_modal-img {
     width: 700px;
   }
 }
 @media screen and (max-width:800px) {
-  .resume_modal-img {
-    width: 500px;
-  }
   .academy_modal-img {
     width: 500px;
   }
@@ -221,11 +215,14 @@ a {
   .header_menu-link {
     margin: 10px;
   }
+  .projects_card:hover {
+    transform: scale(1);
+  }
+  .education_item:hover {
+    transform: scale(1);
+  }
 }
 @media screen and (max-width:620px) {
-  .resume_modal-img {
-    width: 400px;
-  }
   .academy_modal-img {
     width: 400px;
   }
@@ -237,11 +234,21 @@ a {
   }
 }
 @media screen and (max-width:520px) {
-  .resume_modal-img {
-    width: 300px;
-  }
   .academy_modal-img {
     width: 300px;
+  }
+  .projects {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .education {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width:460px) {
+  .projects_btns {
+    padding-bottom: 50px;
   }
 }
 @media screen and (max-width:420px) {
@@ -252,9 +259,6 @@ a {
   .header_menu {
     display: none;
   }
-  .resume_modal-img {
-    width: 200px;
-  }
   .academy_modal-img {
     width: 200px;
   }
@@ -264,7 +268,7 @@ a {
   display: inline-block;
   width: 60px;
   height: 34px;
-  color: #1d3c34;
+  color: #0a0a0a;
   font-size: 18px;
 }
 .switch input {
@@ -279,17 +283,17 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: white;
+  border: 1px solid #0a0a0a;
   border-radius: 30px;
 }
 .slider::before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  top: 4px;
-  left: 4px;
-  background-color: #1d3c34;
+  height: 27px;
+  width: 27px;
+  top: 2.5px;
+  left: 2px;
+  background-color: #0a0a0a;
   transition: 0.4s;
   border-radius: 90px;
 }
@@ -299,12 +303,12 @@ input:checked+.slider::before {
 .slider_russian {
   position: absolute;
   align-items: center;
-  margin-top: 6px;
+  margin-top: 3px;
   margin-left: 5px;
 }
 .slider_english {
   position: absolute;
   align-items: center;
-  margin-top: 6px;
-  margin-left: 34px;
+  margin-top: 3px;
+  margin-left: 30px;
 }

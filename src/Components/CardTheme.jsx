@@ -12,6 +12,7 @@ const CardTheme = () => {
     const closeModal = () => {
         setModalIsOpen(false)
     };
+    Modal.setAppElement('#root');
     return (
         <div class='projects_card theme'>
             <h5>{t('projectsCard3.title')}</h5>
@@ -19,7 +20,7 @@ const CardTheme = () => {
             <div class='projects_btns'>
                 <a href='https://petprojecttheme.netlify.app/'><button class='projects_btn btn' >{t('projects.project')}</button></a>
                 <button class='projects_btn btn' onClick={openModal}>{t('projects.details')}</button>
-                <Modal class='modal' isOpen={modalIsOpen} onRequestClose={closeModal}>
+                <Modal class='modal' isOpen={modalIsOpen} overlayClassName='modal__overlay' onRequestClose={closeModal}>
                     {<div >
                         <h2>{t('projectsCard3.title')}</h2>
                         <p>{t('projectsCard3.description')}</p>
@@ -29,7 +30,7 @@ const CardTheme = () => {
                     <button class='projects_btn btn' onClick={closeModal}>{t('close')}</button>
                 </Modal>
             </div>
-            <h6>JS, HTML/CSS, React, Context, Styled Components</h6>
+            <h6>JavaScript, HTML/CSS, React, Context, Styled Components</h6>
         </div>
     )
 }

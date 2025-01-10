@@ -4,7 +4,6 @@ import AboutMe from './Components/AboutMe';
 import Education from './Components/Education';
 import Projects from './Components/Projects';
 import Contacts from './Components/Contacts';
-import Resume from './Components/Resume';
 import './App.css';
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
     <>
       <Header />
       <AboutMe />
-      <Resume />
       <Projects />
       <Education />
       <Contacts />

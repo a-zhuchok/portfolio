@@ -23,9 +23,8 @@ const Description = () => {
       whileInView='visible'
       viewport={{ once: true }}
       class='about-me_description'>
-        <h2 class='about-me_title'>{t('about-me.title')}</h2>
         <div class='about-me_hardskills'>
-          <h3 class='hardskills_title'>{t('about-me.hardskills_title')}</h3>
+          <p class='hardskills_title title'>{t('about-me.hardskills_title')}</p>
           <ul class='hardskills_list'>
             <motion.li custom={1} variants={textAnimation} class='hardskills_list-item'>HTML/CSS</motion.li>
             <motion.li custom={2} variants={textAnimation} class='hardskills_list-item'>JavaScript</motion.li>

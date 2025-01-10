@@ -12,6 +12,7 @@ const CardTodo = () => {
     const closeModal = () => {
         setModalIsOpen(false)
     };
+    Modal.setAppElement('#root');
     return (
         <div class='projects_card'>
             <h5>{t('projectsCard1.title')}</h5>
@@ -19,7 +20,7 @@ const CardTodo = () => {
             <div class='projects_btns'>
                 <a href='https://a-zhuchok.github.io/todo-app/'><button class='projects_btn btn' >{t('projects.project')}</button></a>
                 <button class='projects_btn btn' onClick={openModal}>{t('projects.details')}</button>
-                <Modal class='modal' isOpen={modalIsOpen} onRequestClose={closeModal}>
+                <Modal class='modal' isOpen={modalIsOpen} overlayClassName='modal__overlay' onRequestClose={closeModal}>
                     {<div >
                         <h2>{t('projectsCard1.title')}</h2>
                         <p>{t('projectsCard1.description')}</p>
@@ -29,7 +30,7 @@ const CardTodo = () => {
                     <button class='projects_btn btn' onClick={closeModal}>{t('close')}</button>
                 </Modal>
             </div>
-            <h6>JS, HTML/CSS, React, Swagger, Ant Design, React Router DOM, fetch</h6>
+            <h6>JavaScript, HTML/CSS, React, Swagger, Ant Design, React Router DOM, fetch</h6>
         </div>
     )
 }
